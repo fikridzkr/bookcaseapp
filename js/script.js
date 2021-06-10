@@ -1,7 +1,8 @@
 const searchBook = document.getElementById('searchBook');
 const isComplete = document.getElementById('inputBookIsComplete');
 const bookCondition = document.getElementById('bookCondition');
-
+const header = document.querySelector('.head_bar');
+const closeButton = document.getElementById('closeButton');
 document.addEventListener('DOMContentLoaded', function () {
   const submitForm = document.getElementById('inputBook');
 

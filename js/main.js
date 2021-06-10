@@ -5,7 +5,6 @@ const BOOK_ITEMID = 'itemId';
 function addBookshelf() {
   const uncompletedBookList = document.getElementById(UNCOMPLETED_LIST_BOOK_ID);
   const completedBookList = document.getElementById(COMPLETED_LIST_BOOK_ID);
-
   const bookTitle = document.getElementById('inputBookTitle').value;
   const author = document.getElementById('inputBookAuthor').value;
   const year = document.getElementById('inputBookYear').value;
