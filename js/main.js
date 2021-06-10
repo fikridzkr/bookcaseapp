@@ -104,8 +104,8 @@ function createTrashButton() {
 function undoBookFromCompleted(bookElement) {
   const listUncompleted = document.getElementById(UNCOMPLETED_LIST_BOOK_ID);
   const bookTitle = bookElement.querySelector('h3').innerText;
-  const bookAuthor = bookElement.querySelector('p').innerText;
-  const bookYear = bookElement.querySelector('p').innerText;
+  const bookAuthor = bookElement.querySelector('span#author').innerText;
+  const bookYear = bookElement.querySelector('span#year').innerText;
 
   const newBook = makeBookshelf(bookTitle, bookAuthor, bookYear, false);
   const book = findBook(bookElement[BOOK_ITEMID]);
@@ -121,22 +121,3 @@ function createUndoButton() {
     undoBookFromCompleted(event.target.parentElement.parentElement);
   });
 }
-
-const searchBook = document.getElementById('searchBook');
-const isComplete = document.getElementById('inputBookIsComplete');
-const bookCondition = document.getElementById('bookCondition');
-
-searchBook.addEventListener('submit', (e) => {
-  const searchBookTitle = document.getElementById('searchBookTitle').value;
-
-  e.preventDefault();
-  console.log(searchBookTitle);
-});
-
-isComplete.addEventListener('change', () => {
-  if (isComplete.checked) {
-    bookCondition.innerText = 'Selesai diBaca';
-  } else {
-    bookCondition.innerText = 'Belum selesai dibaca';
-  }
-});
