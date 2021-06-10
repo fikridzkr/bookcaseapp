@@ -10,7 +10,7 @@
     <title>Bookshelf Apps</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,800;1,300&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
@@ -22,18 +22,33 @@
     <main>
       <section class="input_section">
         <h2>Masukkan Buku Baru</h2>
-        <form id="inputBook">
+        <form id="inputBook" autocomplete="off">
           <div class="input">
             <label for="inputBookTitle">Judul</label>
-            <input id="inputBookTitle" type="text" required />
+            <input
+              id="inputBookTitle"
+              type="text"
+              required
+              placeholder="Masukkan Judul Buku"
+            />
           </div>
           <div class="input">
             <label for="inputBookAuthor">Penulis</label>
-            <input id="inputBookAuthor" type="text" required />
+            <input
+              id="inputBookAuthor"
+              type="text"
+              required
+              placeholder="Masukkan Penulis Buku"
+            />
           </div>
           <div class="input">
             <label for="inputBookYear">Tahun</label>
-            <input id="inputBookYear" type="number" required />
+            <input
+              id="inputBookYear"
+              type="number"
+              required
+              placeholder="Masukkan Penulis Buku"
+            />
           </div>
           <div class="input_inline">
             <label for="inputBookIsComplete">Selesai dibaca</label>
@@ -47,9 +62,8 @@
       </section>
 
       <section class="search_section">
-        <h2>Cari Buku (Opsional)</h2>
+        <h2>Cari Buku</h2>
         <form id="searchBook">
-          <label for="searchBookTitle">Judul</label>
           <input id="searchBookTitle" type="text" />
           <button id="searchSubmit" type="submit">Cari</button>
         </form>
