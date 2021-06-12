@@ -34,10 +34,10 @@ function makeBookshelf(title, author, year, isCompleted) {
   textTitle.innerText = title;
 
   const textAuthor = document.createElement('p');
-  textAuthor.innerHTML = `Penulis: <span id="author">${author}</span>`;
+  textAuthor.innerHTML = `Author: <span id="author">${author}</span>`;
 
   const textYear = document.createElement('p');
-  textYear.innerHTML = `Tahun: <span id="year">${year}</span>`;
+  textYear.innerHTML = `Year: <span id="year">${year}</span>`;
 
   const textContainer = document.createElement('div');
   textContainer.classList.add('book_item');
@@ -81,7 +81,7 @@ function addBookToCompleted(bookElement) {
 }
 
 function createCheckButton() {
-  return createButton('green', 'Selesai Dibaca', function (event) {
+  return createButton('green', 'Finished Reading', function (event) {
     addBookToCompleted(event.target.parentElement.parentElement);
   });
 }
@@ -95,7 +95,7 @@ function removeBookFromCompleted(bookElement) {
 }
 
 function createTrashButton() {
-  return createButton('red', 'Hapus Buku', function (event) {
+  return createButton('red', 'Delete Book', function (event) {
     removeBookFromCompleted(event.target.parentElement.parentElement);
   });
 }
@@ -116,7 +116,7 @@ function undoBookFromCompleted(bookElement) {
 }
 
 function createUndoButton() {
-  return createButton('green', 'Belum Selesai di Baca', function (event) {
+  return createButton('green', 'Not Finished Reading', function (event) {
     undoBookFromCompleted(event.target.parentElement.parentElement);
   });
 }

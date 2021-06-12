@@ -45,8 +45,8 @@ searchBook.addEventListener('submit', (e) => {
 
 isComplete.addEventListener('change', () => {
   if (isComplete.checked) {
-    bookCondition.innerText = 'Selesai diBaca';
+    bookCondition.innerText = 'Finished Reading';
   } else {
-    bookCondition.innerText = 'Belum selesai dibaca';
+    bookCondition.innerText = 'Not Finished Reading';
   }
 });

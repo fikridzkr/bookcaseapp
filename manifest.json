@@ -1,0 +1,21 @@
+{
+    "short_name": "MyBookShelf",
+    "name": "MyBookShelf",
+    "icons": [
+      {
+        "src": "img/icons/icons-192.png",
+        "type": "image/png",
+        "sizes": "192x192",
+        "purpose": "any maskable"
+      },
+      {
+        "src": "img/icons/icons-512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "start_url": "/index.html",
+    "background_color": "#1d2d50",
+    "display": "fullscreen",
+    "theme_color": "#1d2d50"
+  }

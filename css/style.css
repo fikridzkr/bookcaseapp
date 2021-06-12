@@ -81,6 +81,10 @@ main {
   align-items: center;
 }
 
+.input_section > form > .input_inline > input[type='checkbox'] {
+  margin: 8px;
+}
+
 .input_section > form > .input_inline > label {
   color: #fcdab7;
   margin-right: 10px;
@@ -96,7 +100,7 @@ main {
   background-color: #133b5c;
 }
 
-.search_section > h2 {
+.search_section > label > h2 {
   color: #fcdab7;
 }
 
@@ -172,4 +176,18 @@ p {
 .book_shelf > .book_list > .book_item > .action > .red {
   background-color: rgb(134, 41, 41);
   color: white;
+}
+footer {
+  bottom: 0;
+  padding: 25px 20px;
+  text-align: center;
+  color: #fcdab7;
+}
+
+footer > a {
+  color: #fcdab7;
+  text-decoration: none;
+}
+footer > hr {
+  margin: 10px 20px;
 }
